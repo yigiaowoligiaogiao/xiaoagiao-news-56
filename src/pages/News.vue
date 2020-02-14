@@ -102,7 +102,7 @@ export default {
       const { statusCode, data } = res.data
       if (statusCode === 200) {
         this.commentList = data
-        console.log(this.commentList)
+        /* console.log(this.commentList) */
       }
     },
 
@@ -186,19 +186,22 @@ export default {
        border-bottom: 3px solid #cccccc;
       width: 100%;
        .center{
-        width: 100%;
-        padding: 0 10px;
-        .video{
-                  width: 100%;
+         width: 100%;
+         padding: 0 10px;
+          .video{ width: 300px;
+          height: 200px;
+          video{
+            width: 100%;
+          }
 
                 }
-        .post-info{
+         .post-info{
           margin-bottom: 10px;
           span:nth-child(2){padding-left: 5px;}
-        }
-        p{
+          }
+          p{
           font-size: 14px;
-          font-weight: 700;
+          font-weight: 700;}
         }
       }
      .header{
@@ -329,5 +332,5 @@ export default {
       }
     }
 }
-    }
+
 </style>
